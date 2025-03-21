@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Nunito:wght@200;400&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bubblegum Sans',sans-serif;
+}
+
+html{
+    font-size: 2rem;
+}
+
+body{
+    background: url('img5.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    top:40%;
+}
+
+header{
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    padding: 25px 7%;
+    border-bottom: solid 1px rgba(0,0,0,.7);
+    box-shadow: 1px 2px 15px rgba(0,0,0,.7);
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.logo i{
+    color: #896262;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    color: #fff;
+    margin-left: .6rem;
+    padding:.2rem;
+    border-radius: 8px;
+    transition: .6s;
+}
+
+nav a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.btn{
+    padding: 10px 1rem;
+    margin-left: 1.4%;
+    font-size: .9rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: white;
+    color: black;
+    transition: .4s ease;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#chek{
+    display: none;
+}
+
+.fa-bars{
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    margin-top: 10%;
+}
+
+.content{
+   width: 450px; 
+   text-transform: capitalize;
+   letter-spacing: 1px;
+}
+
+.content h1{
+    font-size:2.3rem;
+    color: #fff;
+    background: transparent;
+}
+
+.content h1 span{
+    color: #c39366;
+}
+
+.content p{
+    padding: 20px 0;
+    font-size: 16px;
+    letter-spacing: .7px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.content p span{
+    color:rgb(138, 138, 227)
+}
+
+.content .btn{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+@media(max-width:1000px){
+    header{
+        padding:20px 4%;
+    }
+}
+
+@media(max-width:998px){
+    header{
+        padding:20px 2%;
+    }
+    html{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:798px){
+    header{
+        padding:20px 2%;
+    }
+    html{
+        font-size: 14px;
+    }
+    nav{
+        position: absolute;
+        top:100%;
+        right: 0; left:0;
+        box-shadow: 2px 4px 20px transparent;
+        height: 170px;
+        height: 0px;
+        overflow: hidden;
+        background: black;
+    }
+    nav a{
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        border: solid 1px rgb(44, 44, 44);
+    }
+    nav a:hover{
+        background: #fff;
+        color: black;
+        transition: .6s ease;
+    }
+    .fa-bars{
+        display: block;
+    }
+
+    #chek:checked ~ nav{
+        height: 250px;
+    }
+
+}
